@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+// _variables.scss
+// Define color palette
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+// Define font settings
+$font-family: 'Roboto', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
+
+// Define spacing
+$padding-base: 1rem;
+$margin-base: 1rem;
+
+// Define breakpoints for responsive design
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Global styles
+html {
+  font-size: 100%; // Default font size for accessibility
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $dark-color;
+  background-color: $light-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+button {
+  font-family: $font-family;
+  font-size: 1rem;
+  padding: $padding-base;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $padding-base;
+}
+
+.header {
+  background-color: $dark-color;
+  color: #fff;
+  padding: $padding-base;
+  text-align: center;
+
+  h1 {
+    font-family: $heading-font-family;
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  background-color: $dark-color;
+  color: #fff;
+  padding: $padding-base;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.card {
+  border: 1px solid $secondary-color;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: $padding-base;
+    font-family: $heading-font-family;
+  }
+
+  .card-body {
+    padding: $padding-base;
+  }
+
+  .card-footer {
+    background-color: $light-color;
+    padding: $padding-base;
+    text-align: right;
+  }
+}
+
+// Responsive design
+@media (max-width: $breakpoint-sm) {
+  .header, .footer {
+    padding: $padding-base / 2;
+  }
+
+  .container {
+    padding: $padding-base / 2;
+  }
+}
+
