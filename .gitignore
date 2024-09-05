@@ -41,3 +41,72 @@ testem.log
 .DS_Store
 Thumbs.db
 .env
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Uncomment if you have a project that uses npm or yarn for front-end dependencies
+# node_modules/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# VS Code directories
+.vscode/
+
+# Rider directories
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code settings
+.vscode/
+
+# ASP.NET Core
+appsettings*.json
+# Note: Do not ignore appsettings.json if you want to store environment-specific settings securely, 
+# such as in a secret manager or environment variables.
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Auto-generated files
+*.csproj.user
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# NuGet
+.nuget/
+# Ignore NuGet packages directory
+packages/
+
+# OS-specific files
+.DS_Store
+Desktop.ini
+
+# JetBrains Rider
+.idea/
+
+# Maven
+.mvn/
+
+# Others
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
