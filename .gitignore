@@ -110,3 +110,5 @@ Desktop.ini
 *.user
 *.userosscache
 *.sln.docstates
+# Ignore FileContentIndex if it is a generated file or cache
+FileContentIndex
