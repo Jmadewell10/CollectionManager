@@ -1,12 +1,411 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.services\\extensions\\validationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|solutionrelative:collectionmanager.api.services\\extensions\\validationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.services\\extensions\\passwordhashextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|solutionrelative:collectionmanager.api.services\\extensions\\passwordhashextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.services\\extensions\\modelextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|solutionrelative:collectionmanager.api.services\\extensions\\modelextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|solutionrelative:collectionmanager.api.services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762CCAD6-96D5-4E15-99E4-21C35B2AC31F}|CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{762CCAD6-96D5-4E15-99E4-21C35B2AC31F}|CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj|solutionrelative:collectionmanager.api.repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DCF288-2F70-46B8-A2E3-47C7616CBAC1}|CollectionManager.API\\CollectionManager.API.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DCF288-2F70-46B8-A2E3-47C7616CBAC1}|CollectionManager.API\\CollectionManager.API.csproj|solutionrelative:collectionmanager.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|solutionrelative:collectionmanager.api.domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762CCAD6-96D5-4E15-99E4-21C35B2AC31F}|CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.repository\\collectionmanager.api.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{762CCAD6-96D5-4E15-99E4-21C35B2AC31F}|CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj|solutionrelative:collectionmanager.api.repository\\collectionmanager.api.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.data\\context\\collectionmanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|solutionrelative:collectionmanager.api.data\\context\\collectionmanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.services\\collectionmanager.api.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7157819A-B013-44DD-B7E7-727CDA5A6B85}|CollectionManager.API.Services\\CollectionManager.API.Services.csproj|solutionrelative:collectionmanager.api.services\\collectionmanager.api.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CA1447-D62A-4315-B6CA-14E8A124AF15}|CollectionManager.API.Common\\CollectionManager.API.Common.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.common\\jwtconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CA1447-D62A-4315-B6CA-14E8A124AF15}|CollectionManager.API.Common\\CollectionManager.API.Common.csproj|solutionrelative:collectionmanager.api.common\\jwtconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|solutionrelative:collectionmanager.api.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.data\\migrations\\collectionmanagercontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|solutionrelative:collectionmanager.api.data\\migrations\\collectionmanagercontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.domain\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|solutionrelative:collectionmanager.api.domain\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CA1447-D62A-4315-B6CA-14E8A124AF15}|CollectionManager.API.Common\\CollectionManager.API.Common.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.common\\errorconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CA1447-D62A-4315-B6CA-14E8A124AF15}|CollectionManager.API.Common\\CollectionManager.API.Common.csproj|solutionrelative:collectionmanager.api.common\\errorconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ABEF85-4087-4C63-8BC5-5445DBB78439}|CollectionManager.API.Models\\CollectionManager.API.Models.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.models\\newaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ABEF85-4087-4C63-8BC5-5445DBB78439}|CollectionManager.API.Models\\CollectionManager.API.Models.csproj|solutionrelative:collectionmanager.api.models\\newaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ABEF85-4087-4C63-8BC5-5445DBB78439}|CollectionManager.API.Models\\CollectionManager.API.Models.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.models\\logincredentialsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ABEF85-4087-4C63-8BC5-5445DBB78439}|CollectionManager.API.Models\\CollectionManager.API.Models.csproj|solutionrelative:collectionmanager.api.models\\logincredentialsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.data\\context\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|solutionrelative:collectionmanager.api.data\\context\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.domain\\collection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|solutionrelative:collectionmanager.api.domain\\collection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144546BF-F185-4E6C-95FA-E4FF30D0229B}|CollectionManager.API.Domain\\CollectionManager.API.Domain.csproj|solutionrelative:collectionmanager.api.domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|d:\\repo\\collectionmanager\\collectionmanager.api\\collectionmanager.api\\collectionmanager.api.data\\migrations\\20240905201312_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DEBA7D9-4F58-4D1C-BF10-B478664C0B40}|CollectionManager.API.Data\\CollectionManager.API.Data.csproj|solutionrelative:collectionmanager.api.data\\migrations\\20240905201312_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240912183003_AddedKeyTable.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Migrations\\20240912183003_AddedKeyTable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:30:03.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CollectionManager.API.Repository",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj",
+              "RelativeDocumentMoniker": "CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj",
+              "RelativeToolTip": "CollectionManager.API.Repository\\CollectionManager.API.Repository.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-12T18:22:19.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Repository\\AccountRepository.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Repository\\AccountRepository.cs",
+              "RelativeToolTip": "CollectionManager.API.Repository\\AccountRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:22:29.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Services\\AccountService.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\AccountService.cs",
+              "RelativeToolTip": "CollectionManager.API.Services\\AccountService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAArwEcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:17:40.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CollectionManagerContext.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Context\\CollectionManagerContext.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Context\\CollectionManagerContext.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Context\\CollectionManagerContext.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Context\\CollectionManagerContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T18:40:36.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Account.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Domain\\Account.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Account.cs",
+              "RelativeToolTip": "CollectionManager.API.Domain\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T17:35:15.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CollectionManager.API\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:13:01.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelExtension.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\ModelExtension.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Services\\Extensions\\ModelExtension.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\ModelExtension.cs",
+              "RelativeToolTip": "CollectionManager.API.Services\\Extensions\\ModelExtension.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADgvy4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:21:42.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PasswordHashExtension.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\PasswordHashExtension.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Services\\Extensions\\PasswordHashExtension.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\PasswordHashExtension.cs",
+              "RelativeToolTip": "CollectionManager.API.Services\\Extensions\\PasswordHashExtension.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAjwEAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T17:18:54.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidationExtension.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\ValidationExtension.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Services\\Extensions\\ValidationExtension.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\Extensions\\ValidationExtension.cs",
+              "RelativeToolTip": "CollectionManager.API.Services\\Extensions\\ValidationExtension.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwEEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:27:16.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CollectionManager.API.Services",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\CollectionManager.API.Services.csproj",
+              "RelativeDocumentMoniker": "CollectionManager.API.Services\\CollectionManager.API.Services.csproj",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Services\\CollectionManager.API.Services.csproj",
+              "RelativeToolTip": "CollectionManager.API.Services\\CollectionManager.API.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-12T18:21:32.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JWTConstants.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Common\\JWTConstants.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Common\\JWTConstants.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Common\\JWTConstants.cs",
+              "RelativeToolTip": "CollectionManager.API.Common\\JWTConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T17:24:02.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewAccountDto.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Models\\NewAccountDto.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Models\\NewAccountDto.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Models\\NewAccountDto.cs",
+              "RelativeToolTip": "CollectionManager.API.Models\\NewAccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:17:12.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginCredentialsDto.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Models\\LoginCredentialsDto.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Models\\LoginCredentialsDto.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Models\\LoginCredentialsDto.cs",
+              "RelativeToolTip": "CollectionManager.API.Models\\LoginCredentialsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:16:33.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ErrorConstants.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Common\\ErrorConstants.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Common\\ErrorConstants.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Common\\ErrorConstants.cs",
+              "RelativeToolTip": "CollectionManager.API.Common\\ErrorConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:15:02.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240910010731_AddLogin.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Migrations\\20240910010731_AddLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:07:31.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Key.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Key.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Domain\\Key.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Key.cs",
+              "RelativeToolTip": "CollectionManager.API.Domain\\Key.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:02:58.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CollectionManagerContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\CollectionManagerContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Migrations\\CollectionManagerContextModelSnapshot.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\CollectionManagerContextModelSnapshot.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Migrations\\CollectionManagerContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T20:15:15.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\User.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Domain\\User.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\User.cs",
+              "RelativeToolTip": "CollectionManager.API.Domain\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T17:32:56.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240905201312_InitialCreate.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240905201312_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Migrations\\20240905201312_InitialCreate.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Migrations\\20240905201312_InitialCreate.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Migrations\\20240905201312_InitialCreate.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T20:13:12.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DesigntimeDbContextFactory.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Context\\DesigntimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Data\\Context\\DesigntimeDbContextFactory.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Data\\Context\\DesigntimeDbContextFactory.cs",
+              "RelativeToolTip": "CollectionManager.API.Data\\Context\\DesigntimeDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T18:45:31.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Card.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Card.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Domain\\Card.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Card.cs",
+              "RelativeToolTip": "CollectionManager.API.Domain\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T17:41:42.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Collection.cs",
+              "DocumentMoniker": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Collection.cs",
+              "RelativeDocumentMoniker": "CollectionManager.API.Domain\\Collection.cs",
+              "ToolTip": "D:\\repo\\CollectionManager\\CollectionManager.API\\CollectionManager.API\\CollectionManager.API.Domain\\Collection.cs",
+              "RelativeToolTip": "CollectionManager.API.Domain\\Collection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T17:40:33.668Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

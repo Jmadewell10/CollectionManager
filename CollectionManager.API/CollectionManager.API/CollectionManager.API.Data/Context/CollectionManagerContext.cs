@@ -9,6 +9,7 @@ namespace CollectionManager.API.Domain.Context
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Collection> Collections { get; set; }
         public DbSet<Card> Cards { get; set; }
+        public DbSet<Key> Keys { get; set; }
 
         public CollectionManagerContext(DbContextOptions<CollectionManagerContext> options) : base(options)
         {
@@ -39,6 +40,10 @@ namespace CollectionManager.API.Domain.Context
                 .HasForeignKey(card => card.CollectionId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Account>()
+                .HasOne<Key>(a => a.Key)
+                .WithOne(k => k.Account)
+                .HasForeignKey<Key>(k => k.AccountId);
 
         }
 

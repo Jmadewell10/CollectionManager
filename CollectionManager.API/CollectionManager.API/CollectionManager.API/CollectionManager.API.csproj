@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\CollectionManager.API.Common\CollectionManager.API.Common.csproj" />
+    <ProjectReference Include="..\CollectionManager.API.Models\CollectionManager.API.Models.csproj" />
+    <ProjectReference Include="..\CollectionManager.API.Services\CollectionManager.API.Services.csproj" />
   </ItemGroup>
 
 </Project>

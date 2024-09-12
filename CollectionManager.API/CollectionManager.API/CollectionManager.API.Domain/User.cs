@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace CollectionManager.API.Domain
+﻿namespace CollectionManager.API.Domain
 {
     public class User
     {
