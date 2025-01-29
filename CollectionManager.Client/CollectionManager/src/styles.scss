@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Define a theme
+$collection-manager-theme: mat.define-light-theme((
+  color: (
+    primary: mat.define-palette(mat.$deep-purple-palette),
+    accent: mat.define-palette(mat.$amber-palette),
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+// Apply the core styles and theme
+@include mat.core();
+@include mat.all-component-themes($collection-manager-theme);

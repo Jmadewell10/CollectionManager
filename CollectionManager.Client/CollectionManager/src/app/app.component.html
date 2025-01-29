@@ -1,2 +1,8 @@
+<mat-toolbar color="primary">
+    <button class="nav-menu-button" aria-label="Menu Icon" (click)="toggleMenu()">
+        <mat-icon matTooltip="Expanc Menu">menu</mat-icon>
+    </button>
 
+    <app-header style="flex: auto; margin-left: 50px" [headerText]="headerText"></app-header>
+</mat-toolbar>
 <router-outlet />
