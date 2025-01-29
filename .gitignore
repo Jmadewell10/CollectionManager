@@ -19,6 +19,7 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+.vs/
 
 # Visual Studio Code
 .vscode/*
@@ -112,17 +113,3 @@ Desktop.ini
 *.sln.docstates
 # Ignore FileContentIndex if it is a generated file or cache
 FileContentIndex
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
-CollectionManager.API/CollectionManager.API/.vs/CollectionManager.API/DesignTimeBuild/.dtbcache.v2
-CollectionManager.API/CollectionManager.API/.vs/CollectionManager.API/v17/.suo
-CollectionManager.API/CollectionManager.API/.vs/CollectionManager.API/v17/DocumentLayout.json
-CollectionManager.API/CollectionManager.API/.vs/ProjectEvaluation/collectionmanager.api.metadata.v8.bin
-CollectionManager.API/CollectionManager.API/.vs/ProjectEvaluation/collectionmanager.api.projects.v8.bin
-CollectionManager.API/CollectionManager.API/.vs/ProjectEvaluation/collectionmanager.api.strings.v8.bin
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfo.cs
-CollectionManager.API/CollectionManager.API/CollectionManager.API/obj/Debug/net8.0/CollectionManager.API.AssemblyInfoInputs.cache
