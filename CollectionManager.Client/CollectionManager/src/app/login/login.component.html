@@ -14,7 +14,7 @@
                 <mat-label>Password</mat-label>
                 <input matInput formControlName="password" type="password">
                 <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-                  {{ passwordError }}
+                  Enter a valid password
                 </mat-error>
               </mat-form-field>
           
@@ -28,5 +28,55 @@
           </div>
     </mat-tab>
     <mat-tab label="Sign Up">
+      <div mat-dialog-content>
+        <form [formGroup]="newAccountForm" (ngSubmit)="onSignUp()">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>User Name</mat-label>
+            <input matInput formControlName="userName" type="text" placeholder="User Name">
+            <mat-error *ngIf="newAccountForm.get('userName')?.invalid && newAccountForm.get('userName')?.touched">
+              Enter a valid user name
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password">
+            <mat-error *ngIf="newAccountForm.get('password')?.invalid && newAccountForm.get('password')?.touched">
+              {{ passwordError }}
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" type="text" placeholder="First Name">
+            <mat-error *ngIf="newAccountForm.get('firstName')?.invalid && newAccountForm.get('firstName')?.touched">
+              Enter a first name
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" type="text" placeholder="Last Name">
+            <mat-error *ngIf="newAccountForm.get('lastName')?.invalid && newAccountForm.get('lastName')?.touched">
+              Enter a last name
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="text" placeholder="Email@email.com">
+            <mat-error *ngIf="newAccountForm.get('email')?.invalid && newAccountForm.get('email')?.touched">
+              Enter a valid email
+            </mat-error>
+          </mat-form-field>
+      
+          <div class="button-container">
+            <button mat-button (click)="closeDialog()">Cancel</button>
+            <button mat-flat-button color="primary" type="submit" [disabled]="newAccountForm.invalid">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
     </mat-tab>    
 </mat-tab-group>

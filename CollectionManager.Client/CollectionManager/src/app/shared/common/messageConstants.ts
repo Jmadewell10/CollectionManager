@@ -1,0 +1,1 @@
+export const ACCOUNT_CREATED_MESSAGE = 'Account was successfully created! Please log in.';
