@@ -1,11 +1,8 @@
 ﻿using CollectionManager.API.Domain.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace CollectionManager.API.Data.Context
 {
@@ -13,6 +10,13 @@ namespace CollectionManager.API.Data.Context
     {
         public CollectionManagerContext CreateDbContext(string[] args)
         {
+
+            var config = new ConfigurationBuilder()
+               .SetBasePath(Directory.GetCurrentDirectory()) 
+               .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+               .Build();
+
+            var connectionString = config.GetConnectionString("DefaultConnection");
             var optionsBuilder = new DbContextOptionsBuilder<CollectionManagerContext>();
             optionsBuilder.UseSqlServer("",
                 sqlServerOptionsAction: sqlOptions =>

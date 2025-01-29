@@ -2,7 +2,6 @@
 
 # Compiled output
 /dist
-/tmp
 /out-tsc
 /bazel-out
 
@@ -19,6 +18,12 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+
+# Ignore Visual Studio config files
+.vs/
+*.user
+*.suo
+*.tmp
 
 # Visual Studio Code
 .vscode/*
@@ -47,9 +52,6 @@ bin/
 obj/
 
 # User-specific files
-*.user
-*.userosscache
-*.suo
 *.sln.docstates
 
 # Uncomment if you have a project that uses npm or yarn for front-end dependencies
@@ -106,9 +108,11 @@ Desktop.ini
 .mvn/
 
 # Others
-*.suo
-*.user
 *.userosscache
 *.sln.docstates
 # Ignore FileContentIndex if it is a generated file or cache
 FileContentIndex
+CollectionManager.API/CollectionManager.API/CollectionManager.API/appsettings.json
+# Ignore auto-generated AssemblyInfo.cs
+Properties/AssemblyInfo.cs
+
