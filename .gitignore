@@ -112,3 +112,4 @@ Desktop.ini
 *.sln.docstates
 # Ignore FileContentIndex if it is a generated file or cache
 FileContentIndex
+CollectionManager.API/CollectionManager.API/CollectionManager.API/appsettings.json

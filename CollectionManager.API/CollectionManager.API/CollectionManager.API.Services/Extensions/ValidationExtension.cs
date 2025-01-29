@@ -49,7 +49,7 @@ namespace CollectionManager.API.Services.Extensions
                 return false;
             }
 
-            if (!password.Any(Char.IsSymbol))
+            if (password.Any(Char.IsSymbol))
             {
                 return false;
             }

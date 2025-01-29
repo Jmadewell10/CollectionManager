@@ -11,16 +11,19 @@ using System.Threading.Tasks;
 using CollectionManager.API.Common;
 using CollectionManager.API.Services.Interfaces;
 using CollectionManager.API.Repository.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace CollectionManager.API.Services
 {
     public class AccountService : IAccountService
     {
         private readonly IAccountRepository _accountRepository;
+        private readonly IConfiguration _config;
 
-        public AccountService(IAccountRepository accountRepository)
+        public AccountService(IAccountRepository accountRepository, IConfiguration config)
         {
             _accountRepository = accountRepository;
+            _config = config;
         }
 
         #region public methods
@@ -54,12 +57,14 @@ namespace CollectionManager.API.Services
         #region private methods
         private string GenerateToken()
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWTConstants.SECRET));
+            var secret = _config["JWTVariables:Secret"];
+            ArgumentNullException.ThrowIfNull(secret);
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: JWTConstants.ISSUER,
-                audience: JWTConstants.AUDIENCE,
+                issuer: _config["JWTVariables:Issuer"],
+                audience: _config["JWTVariables:Audience"],
                 expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: creds
             );

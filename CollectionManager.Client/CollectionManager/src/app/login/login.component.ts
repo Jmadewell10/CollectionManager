@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
   }
 
   get passwordError() {
-    const passwordControl = this.loginForm.get('password');
+    const passwordControl = this.newAccountForm.get('password');
     if (passwordControl?.hasError('required')) return 'Password is required';
     if (passwordControl?.hasError('minlength')) return 'Password must be at least 8 characters';
     if (passwordControl?.hasError('pattern')) return 'Must include 1 uppercase letter & 1 special character';

@@ -36,7 +36,7 @@ namespace CollectionManager.API.Repository
             try
             {
                 Account account = await _context.Accounts.FirstOrDefaultAsync(a => a.UserName == userName) ?? new Account();
-                Key key = await _context.Keys.FirstOrDefaultAsync(k => k.AccountId == account.UserId) ?? new Key();
+                Key key = await _context.Keys.FirstOrDefaultAsync(k => k.AccountId == account.AccountId) ?? new Key();
                 ArgumentNullException.ThrowIfNull(key.Salt);
                 ArgumentNullException.ThrowIfNull(account.Password);
                 return (key.Salt, account.Password);
