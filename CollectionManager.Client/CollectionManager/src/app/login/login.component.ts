@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
     this.newAccountForm = this.builder.group({
       userName: ['', Validators.required],
-      password: ['', [Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[\W_]).{8,}$/)]],
+      password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[\W_]).{8,}$/)]],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', Validators.email],

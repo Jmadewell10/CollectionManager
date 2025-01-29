@@ -14,12 +14,19 @@ import { ACCOUNT_CREATED_MESSAGE } from '../../common/messageConstants';
 export class HeaderComponent implements OnInit {
   @Input() headerText: string = "";
   imageUrl = 'assets/images/logo.png';
-
+  isLoggedIn = false;
 
   constructor(protected dialog: MatDialog, private loginService: LoginService,
      private accountService: AccountService, private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
+    this.accountService.loggedIn$.subscribe(result => {
+      this.isLoggedIn = result
+    });
+    
+  }
+
+  openProfileModal(){
     
   }
 

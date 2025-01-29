@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-    <button class="nav-menu-button" aria-label="Menu Icon" (click)="toggleMenu()">
+    <button *ngIf="isLoggedIn" class="nav-menu-button" aria-label="Menu Icon" (click)="toggleMenu()">
         <mat-icon matTooltip="Expanc Menu">menu</mat-icon>
     </button>
 

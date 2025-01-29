@@ -8,6 +8,7 @@
     <h3 class="header-title">{{headerText}}</h3>
 
     <span class="header-icon">
-        <mat-icon (click)="openLoginModal()">person</mat-icon>
+        <mat-icon *ngIf="!isLoggedIn" (click)="openLoginModal()">person</mat-icon>
+        <mat-icon *ngIf="isLoggedIn" (click)="openProfileModal()">person</mat-icon>
     </span>
 </div>

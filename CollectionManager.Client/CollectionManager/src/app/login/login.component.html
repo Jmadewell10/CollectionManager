@@ -1,7 +1,7 @@
 <mat-tab-group>
     <mat-tab label="Login">
         <div mat-dialog-content>
-            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <form  class="form-box" [formGroup]="loginForm" (ngSubmit)="onLogin()">
               <mat-form-field appearance="outline" class="full-width">
                 <mat-label>User Name</mat-label>
                 <input matInput formControlName="userName" type="text" placeholder="User Name">
@@ -29,7 +29,7 @@
     </mat-tab>
     <mat-tab label="Sign Up">
       <div mat-dialog-content>
-        <form [formGroup]="newAccountForm" (ngSubmit)="onSignUp()">
+        <form class="form-box" [formGroup]="newAccountForm" (ngSubmit)="onSignUp()">
           <mat-form-field appearance="outline" class="full-width">
             <mat-label>User Name</mat-label>
             <input matInput formControlName="userName" type="text" placeholder="User Name">
