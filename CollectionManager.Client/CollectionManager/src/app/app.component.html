@@ -5,4 +5,8 @@
 
     <app-header style="flex: auto; margin-left: 50px" [headerText]="headerText"></app-header>
 </mat-toolbar>
+<div *ngIf="!isLoggedIn">
+    <app-logged-out-home></app-logged-out-home>
+</div>
+
 <router-outlet />

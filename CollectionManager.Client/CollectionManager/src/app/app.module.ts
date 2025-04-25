@@ -18,12 +18,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { LoggedOutHomeComponent } from './logged-out-home/logged-out-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
+    LoggedOutHomeComponent,
   ],
   imports: [
     BrowserModule,
