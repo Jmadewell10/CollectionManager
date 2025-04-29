@@ -1,12 +1,18 @@
-<mat-toolbar color="primary">
-    <button *ngIf="isLoggedIn" class="nav-menu-button" aria-label="Menu Icon" (click)="toggleMenu()">
-        <mat-icon matTooltip="Expanc Menu">menu</mat-icon>
-    </button>
+<div class="app-container">
+    <div class="header-container">
+        <mat-toolbar color="primary">
+            <button *ngIf="isLoggedIn" class="nav-menu-button" aria-label="Menu Icon" (click)="toggleMenu()">
+                <mat-icon matTooltip="Expand Menu">menu</mat-icon>
+            </button>
 
-    <app-header style="flex: auto; margin-left: 50px" [headerText]="headerText"></app-header>
-</mat-toolbar>
-<div *ngIf="!isLoggedIn">
-    <app-logged-out-home></app-logged-out-home>
+            <app-header style="flex: auto; margin-left: 50px" [headerText]="headerText"></app-header>
+        </mat-toolbar>
+    </div>  
+    <div class="body-container">
+        <div *ngIf="!isLoggedIn">
+            <app-logged-out-home></app-logged-out-home>
+        </div>
+    </div>
+
 </div>
-
 <router-outlet />

@@ -19,6 +19,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoggedOutHomeComponent } from './logged-out-home/logged-out-home.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { LoggedOutHomeComponent } from './logged-out-home/logged-out-home.compon
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
