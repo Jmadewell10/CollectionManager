@@ -1,0 +1,16 @@
+.background-card{
+    display: flex;
+    background-color: rgb(3, 19, 73);
+}
+
+.body-of-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+.button{
+    color: aliceblue !important;
+    background-color: rgb(58, 0, 55);
+}
