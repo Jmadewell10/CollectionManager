@@ -1,4 +1,4 @@
-﻿namespace CollectionManager.API.Common
+﻿namespace CollectionManager.API.Common.Constants
 {
     public class ErrorConstants
     {

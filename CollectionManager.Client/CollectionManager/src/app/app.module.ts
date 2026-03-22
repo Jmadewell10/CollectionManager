@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoggedOutHomeComponent } from './logged-out-home/logged-out-home.component';
 import { MatCardModule } from '@angular/material/card';
+import { CollectionsComponent } from './collections/collections.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     LoginComponent,
     LoggedOutHomeComponent,
+    CollectionsComponent,
   ],
   imports: [
     BrowserModule,

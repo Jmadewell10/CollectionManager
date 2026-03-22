@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollectionManager.API.Common
+namespace CollectionManager.API.Common.Constants
 {
     public class JWTConstants
     {

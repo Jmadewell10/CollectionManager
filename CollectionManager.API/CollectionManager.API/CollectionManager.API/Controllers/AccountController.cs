@@ -1,4 +1,4 @@
-﻿using CollectionManager.API.Common;
+﻿using CollectionManager.API.Common.Constants;
 using CollectionManager.API.Models;
 using CollectionManager.API.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
