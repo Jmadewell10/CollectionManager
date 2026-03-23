@@ -1,7 +1,17 @@
-<mat-card class="background-card">
-    <div class="body-of-card"> 
-        <h2>Welcome to Biblioplex Collection Manager!</h2>
-        <h4>Please log in!</h4>
-        <button mat-button class="button" (click)="login()">Login</button>       
-    </div>
-</mat-card>
+<div class="logged-out-container">
+    <mat-card class="welcome-card">
+        <div class="card-body">
+            <div class="logo-icon">
+                <mat-icon>auto_stories</mat-icon>
+            </div>
+            <h1 class="app-title">Biblioplex</h1>
+            <p class="app-subtitle">Collection Manager</p>
+            <mat-divider class="divider"></mat-divider>
+            <p class="welcome-text">Sign in to manage and explore your collections.</p>
+            <button mat-flat-button class="login-button" (click)="login()">
+                <mat-icon>login</mat-icon>
+                Sign In
+            </button>
+        </div>
+    </mat-card>
+</div>
