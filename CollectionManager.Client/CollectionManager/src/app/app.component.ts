@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AccountService } from './shared/services/account.service';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,11 @@ import { AccountService } from './shared/services/account.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
+  @ViewChild('sidenav') sidenav!: MatSidenav
   title = 'CollectionManager';
   headerText = 'Biblioplex Collection Manager';
   isLoggedIn = false;
+
 
   constructor(protected accountService: AccountService) {
   }
@@ -22,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   toggleMenu(){
-
+    this.sidenav.toggle();
   }
 }
 

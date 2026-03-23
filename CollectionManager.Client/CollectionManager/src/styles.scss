@@ -1,7 +1,6 @@
 @use '@angular/material' as mat;
 
-// Define a theme
-$collection-manager-theme: mat.define-light-theme((
+$collection-manager-theme: mat.define-dark-theme((
   color: (
     primary: mat.define-palette(mat.$deep-purple-palette),
     accent: mat.define-palette(mat.$amber-palette),
@@ -10,6 +9,30 @@ $collection-manager-theme: mat.define-light-theme((
   density: 0,
 ));
 
-// Apply the core styles and theme
 @include mat.core();
 @include mat.all-component-themes($collection-manager-theme);
+
+// Dialog
+.dark-dialog {
+    --mdc-dialog-container-color: #2c2c2c;
+    --mdc-dialog-with-divider-divider-color: rgba(255, 255, 255, 0.07);
+    --mdc-dialog-subhead-color: #e8e8e8;
+    --mdc-dialog-supporting-text-color: #a0a0a0;
+
+    .mdc-dialog__surface {
+        background-color: #2c2c2c !important;
+        border: 1px solid rgba(255, 255, 255, 0.07) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+// Snackbar
+.dark-snackbar {
+    --mdc-snackbar-container-color: #2c2c2c;
+    --mdc-snackbar-supporting-text-color: #e8e8e8;
+    --mat-snack-bar-button-color: #9c8fd4;
+
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 6px !important;
+}
