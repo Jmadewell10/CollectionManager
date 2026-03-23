@@ -14,5 +14,16 @@
         </div>
     </div>
 
+        <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #sidenav mode="over" [fixedInViewport]="true" [fixedTopGap]="64">
+            <mat-nav-list>
+                <a mat-list-item routerLink="/collections" routerLinkActive="/collections" (click)="sidenav.close()">
+                    <mat-icon matListItemIcon>library_books</mat-icon>
+                    <span matListItemTitle>Collections</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+    </mat-sidenav-container>
+
 </div>
 <router-outlet />
