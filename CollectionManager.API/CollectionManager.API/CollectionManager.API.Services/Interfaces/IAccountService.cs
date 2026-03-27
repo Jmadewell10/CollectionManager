@@ -6,5 +6,6 @@ namespace CollectionManager.API.Services.Interfaces
     {
         Task<string> AddAccount(NewAccountDto accountDto);
         Task<(string, bool)> Authenticate(LoginCredentialsDto loginCredentials);
+        Task<string> GenerateToken();
     }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { AccountService } from './shared/services/account.service';
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +15,19 @@ export class AppComponent implements OnInit {
   isLoggedIn = false;
 
 
-  constructor(protected accountService: AccountService) {
+  constructor(protected accountService: AccountService, protected router: Router) {
   }
 
   ngOnInit(): void {
     this.accountService.loggedIn$.subscribe(result => {
       this.isLoggedIn = result;
-    })
-    
+    });
+
+    this.accountService.checkToken().subscribe(isValid => {
+      if(isValid){
+        this.router.navigate(['/home']);
+      }
+    });
   }
 
   toggleMenu(){
