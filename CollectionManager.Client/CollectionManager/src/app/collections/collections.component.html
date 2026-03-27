@@ -1,1 +1,37 @@
-<p>collections works!</p>
+<div class="collections-container">
+
+    <div class="collections-header">
+        <button class="add-button" matTooltip="Add Collection" (click)="openAddCollection()">
+            <mat-icon>add</mat-icon>
+        </button>
+        <h1 class="collections-title">Collections</h1>
+    </div>
+
+    <mat-divider class="header-divider"></mat-divider>
+
+    <div class="collections-grid">
+        <mat-card class="collection-card" *ngFor="let collection of collections" (click)="openCollection(collection)">
+            <div class="card-accent-bar"></div>
+            <mat-card-content class="card-content">
+                <div class="card-icon">
+                    <mat-icon>library_books</mat-icon>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">{{ collection.collectionName }}</h3>
+                </div>
+                <div class="card-meta">
+                    <span class="item-count">{{ collection.cards?.length }} items</span>
+                    <mat-icon class="chevron">chevron_right</mat-icon>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Empty state -->
+        <div class="empty-state" *ngIf="collections.length === 0">
+            <mat-icon class="empty-icon">library_add</mat-icon>
+            <p class="empty-title">No collections yet</p>
+            <p class="empty-subtitle">Click the + button to create your first collection.</p>
+        </div>
+    </div>
+
+</div>

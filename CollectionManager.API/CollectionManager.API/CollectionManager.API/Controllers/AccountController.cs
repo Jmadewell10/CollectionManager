@@ -31,7 +31,8 @@ namespace CollectionManager.API.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
             }
         }
 
@@ -57,7 +58,7 @@ namespace CollectionManager.API.Controllers
 
             try
             {
-                var newToken = await _accountService.GenerateToken();
+                var newToken = await _accountService.CheckToken();
                 return Ok(new{ Token = newToken });
             }
             catch (Exception e)

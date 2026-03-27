@@ -7,5 +7,7 @@ namespace CollectionManager.API.Repository.Interfaces
         Task<string> AddAccount(Account account, User user, Key key);
         Task<IEnumerable<string>> GetAllUserNames();
         Task<(string, string)> GetKey(string userName);
+        Task<Account> GetAccountByUserName(string userName);
+        Task<Account> GetAccountById(Guid id);
     }
 }
