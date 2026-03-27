@@ -4,6 +4,7 @@
     {
         public Guid CollectionId { get; set; }
         public Guid AccountId { get; set; }
+        public string? CollectionName { get; set; }
         public IQueryable<Card>? Cards { get; set; }
         public Account? Account { get; set; }
     }

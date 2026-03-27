@@ -3,7 +3,8 @@
     public class Card
     {
         public Guid CardId { get; set; }
+        public Guid? ScryfallId { get; set; }
         public Collection? Collection { get; set; }
-        public Guid CollectionId { get; set; }
+        public Guid? CollectionId { get; set; }
     }
 }

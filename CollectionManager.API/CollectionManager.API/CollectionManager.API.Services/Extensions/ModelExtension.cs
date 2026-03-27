@@ -43,5 +43,10 @@ namespace CollectionManager.API.Services.Extensions
 
             return (account, user, key);
         }
+
+        public static void CreateNewCollectionFromDto(this NewCollectionDto newCollectionDto)
+        {
+
+        }
     }
 }

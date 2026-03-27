@@ -27,11 +27,6 @@
     flex: 1;
 }
 
-.sidenav-container {
-    flex: 1;
-    background: transparent;
-}
-
 .nav-menu-button {
     background: transparent;
     border: none;
@@ -70,8 +65,14 @@
     .mat-drawer {
         background-color: #252525 !important;
         border-right: 1px solid rgba(255, 255, 255, 0.07);
-        width: 220px;
+        width: 280px;
+        overflow-x: hidden !important;
         box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+        
+        .mat-drawer-inner-container {
+            overflow: hidden !important;
+            overflow-y: auto !important; // keeps vertical scroll if needed
+        }
 
         .mat-nav-list {
             padding-top: 0.75rem;

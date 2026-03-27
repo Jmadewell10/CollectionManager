@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   loginForm!: UntypedFormGroup;
   newAccountForm!: UntypedFormGroup;
 
-  constructor(protected builder: UntypedFormBuilder, protected dialogRef: MatDialogRef<LoginComponent>) {
+  constructor(protected builder: UntypedFormBuilder, protected dialogRef: MatDialogRef<LoginComponent>, protected router: Router) {
   }
 
 
@@ -36,7 +37,8 @@ export class LoginComponent implements OnInit {
   onLogin() {
     if (this.loginForm.valid) {
       console.log('Login Data:', this.loginForm.value);
-      this.dialogRef.close(this.loginForm.value); // Close dialog and return form data
+      this.dialogRef.close(this.loginForm.value);
+      this.router.navigate(['/home']);
     }
   }
 

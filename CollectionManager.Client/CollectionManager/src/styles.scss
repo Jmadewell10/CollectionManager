@@ -36,3 +36,22 @@ $collection-manager-theme: mat.define-dark-theme((
     border: 1px solid rgba(255, 255, 255, 0.07) !important;
     border-radius: 6px !important;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+.mat-drawer-container {
+    overflow: hidden !important;
+}
