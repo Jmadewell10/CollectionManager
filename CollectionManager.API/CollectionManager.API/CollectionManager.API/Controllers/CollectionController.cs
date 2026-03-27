@@ -15,7 +15,7 @@ namespace CollectionManager.API.Controllers
     {
         private readonly ICollectionService _collectionService;
 
-        public CollectionController(CollectionService collectionService)
+        public CollectionController(ICollectionService collectionService)
         {
             _collectionService = collectionService;
         }
@@ -30,7 +30,7 @@ namespace CollectionManager.API.Controllers
             catch(Exception e)
             {
                 Console.WriteLine($"{e.Message}");
-                return BadRequest(e.Message);
+                return StatusCode(500, e);
             }
         }
 
@@ -45,7 +45,7 @@ namespace CollectionManager.API.Controllers
             catch(Exception e)
             {
                 Console.WriteLine($"{e.Message}");
-                return BadRequest(e.Message);
+                return StatusCode(500, e);
             }
         }
 

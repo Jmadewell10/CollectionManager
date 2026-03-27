@@ -1,0 +1,32 @@
+<div class="dialog-container">
+    <div class="dialog-header">
+        <h2 class="dialog-title">{{ isEditMode ? 'Edit Collection' : 'New Collection' }}</h2>
+        <button class="close-button" (click)="cancel()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <mat-divider class="header-divider"></mat-divider>
+
+    <form class="dialog-form" [formGroup]="collectionForm">
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Collection Name</mat-label>
+            <input matInput formControlName="collectionName" placeholder="Enter collection name" />
+            <mat-error *ngIf="collectionForm.get('collectionName')?.hasError('required')">
+                Collection name is required
+            </mat-error>
+            <mat-error *ngIf="collectionForm.get('collectionName')?.hasError('maxlength')">
+                Collection name cannot exceed 100 characters
+            </mat-error>
+        </mat-form-field>
+    </form>
+
+    <mat-divider class="footer-divider"></mat-divider>
+
+    <div class="dialog-footer">
+        <button class="cancel-button" (click)="cancel()">Cancel</button>
+        <button class="save-button" (click)="save()" [disabled]="collectionForm.invalid">
+            {{ isEditMode ? 'Save Changes' : 'Create' }}
+        </button>
+    </div>
+</div>

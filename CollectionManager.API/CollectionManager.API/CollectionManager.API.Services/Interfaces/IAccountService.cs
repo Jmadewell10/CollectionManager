@@ -1,4 +1,5 @@
-﻿using CollectionManager.API.Models;
+﻿using CollectionManager.API.Domain;
+using CollectionManager.API.Models;
 
 namespace CollectionManager.API.Services.Interfaces
 {
@@ -6,6 +7,8 @@ namespace CollectionManager.API.Services.Interfaces
     {
         Task<string> AddAccount(NewAccountDto accountDto);
         Task<(string, bool)> Authenticate(LoginCredentialsDto loginCredentials);
-        Task<string> GenerateToken();
+        Task<string> GenerateToken(Account account);
+        Task<string> CheckToken();
+        Task<Account> GetAccountFromToken();
     }
 }

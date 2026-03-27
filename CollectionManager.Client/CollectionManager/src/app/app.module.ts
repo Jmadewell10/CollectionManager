@@ -23,6 +23,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CollectionsComponent } from './collections/collections.component';
 import { HomeComponent } from './home/home.component';
 import { TokenInterceptor } from './shared/Interceptors/token.interceptor';
+import { AddEditCollectionComponent } from './collections/add-edit-collection/add-edit-collection.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TokenInterceptor } from './shared/Interceptors/token.interceptor';
     LoggedOutHomeComponent,
     CollectionsComponent,
     HomeComponent,
+    AddEditCollectionComponent,
   ],
   imports: [
     BrowserModule,

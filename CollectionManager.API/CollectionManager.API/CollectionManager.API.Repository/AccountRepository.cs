@@ -61,6 +61,34 @@ namespace CollectionManager.API.Repository
                 throw;
             }
         }
+
+        public async Task<Account> GetAccountByUserName(string userName)
+        {
+            try
+            {
+                 Account account = await _context.Accounts.FirstOrDefaultAsync(a => a.UserName == userName) ?? new Account();
+                return account;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                throw;
+            }
+        }
+
+        public async Task<Account> GetAccountById(Guid id)
+        {
+            try
+            {
+                Account account = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountId == id) ?? new Account();
+                return account;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                throw;
+            }
+        }
     }
 }
 

@@ -18,8 +18,12 @@ var connectionString = builder.Configuration.GetConnectionString(ConfigConstants
 builder.Services.AddDbContext<CollectionManagerContext>(options => 
 options.UseSqlServer(connectionString));
 // Add services to the container.
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<ICollectionRepository, CollectionRepository>();
+builder.Services.AddScoped<ICollectionService, CollectionService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
