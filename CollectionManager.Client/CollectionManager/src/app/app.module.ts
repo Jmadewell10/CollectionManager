@@ -15,12 +15,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { provideHttpClient } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoggedOutHomeComponent } from './logged-out-home/logged-out-home.component';
 import { MatCardModule } from '@angular/material/card';
 import { CollectionsComponent } from './collections/collections.component';
+import { HomeComponent } from './home/home.component';
+import { TokenInterceptor } from './shared/Interceptors/token.interceptor';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { CollectionsComponent } from './collections/collections.component';
     LoginComponent,
     LoggedOutHomeComponent,
     CollectionsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,13 @@ import { CollectionsComponent } from './collections/collections.component';
     MatSnackBarModule,
     MatCardModule
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(withInterceptorsFromDi()),
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenInterceptor,
+    multi: true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

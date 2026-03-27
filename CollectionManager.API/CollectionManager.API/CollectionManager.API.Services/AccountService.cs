@@ -48,14 +48,12 @@ namespace CollectionManager.API.Services
             bool isValid = PasswordHashExtension.VerifyPassword(loginCredentials.Password ?? String.Empty, storedPassword, storedSalt);
             if (isValid)
             {
-                return (GenerateToken(), isValid);
+                return (await GenerateToken(), isValid);
             }
             return (String.Empty, false);
         }
-        #endregion
 
-        #region private methods
-        private string GenerateToken()
+        public async Task<string> GenerateToken()
         {
             var secret = _config["JWTVariables:Secret"];
             ArgumentNullException.ThrowIfNull(secret);
@@ -69,9 +67,11 @@ namespace CollectionManager.API.Services
                 signingCredentials: creds
             );
 
+            await Task.CompletedTask;
+
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
         #endregion
+
     }
 }

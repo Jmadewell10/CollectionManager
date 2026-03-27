@@ -1,4 +1,6 @@
-﻿using CollectionManager.API.Common.Constants;
+﻿using System.Security.Claims;
+using System.Security.Principal;
+using CollectionManager.API.Common.Constants;
 using CollectionManager.API.Models;
 using CollectionManager.API.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -46,6 +48,25 @@ namespace CollectionManager.API.Controllers
             {
                 return Unauthorized(new { Message = ErrorConstants.INCORRECT_CREDENTIALS });
             }
+        }
+
+        [HttpGet("CheckToken")]
+        public async Task<IActionResult> ValidateToken()
+        {
+
+
+            try
+            {
+                var newToken = await _accountService.GenerateToken();
+                return Ok(new{ Token = newToken });
+            }
+            catch (Exception e)
+            {
+                return Unauthorized(new { Message = ErrorConstants.RELOGIN});
+            }
+
+
+            
         }
     }
 }

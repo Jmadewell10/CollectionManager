@@ -34,7 +34,7 @@ export class LoggedOutHomeComponent {
         this.loginService.login(result.userName, result.password)
           .subscribe((loginResult) => {
             if (loginResult) {
-              localStorage.setItem('token', loginResult);
+              localStorage.setItem('token', loginResult.token);
               this.accountService.loginUser();
             }
           });
