@@ -20,11 +20,11 @@ namespace CollectionManager.API.Controllers
             _collectionService = collectionService;
         }
 
-        [HttpGet("GetCollections")]
-        public async Task<IActionResult> GetCollections(string userId) {
+        [HttpGet("GetAllCollectionsForUser")]
+        public async Task<IActionResult> GetCollections() {
             try
             {
-                var result = await _collectionService.GetCollections(userId);
+                var result = await _collectionService.GetCollections();
                 return Ok(result);   
             }
             catch(Exception e)

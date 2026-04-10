@@ -12,23 +12,24 @@ namespace CollectionManager.API.Services
     public class CollectionService : ICollectionService 
     {
         private readonly ICollectionRepository _collectionRepo;
-        private readonly IAccountService _accountService;
+        private readonly IHttpContextService _httpService;
 
-        public CollectionService(ICollectionRepository collectionRepo, IAccountService accountService)
+        public CollectionService(ICollectionRepository collectionRepo, IHttpContextService httpService)
         {
             _collectionRepo = collectionRepo;
-            _accountService = accountService;
+            _httpService = httpService;
         }
 
-        public async Task<List<Collection>> GetCollections(string userId)
+        public async Task<List<Collection>> GetCollections()
         {
-            return await _collectionRepo.GetCollections(userId);
+            var accountId = _httpService.GetAccountId();
+            return await _collectionRepo.GetCollections(accountId);
         }
 
         public async Task<Collection> CreateCollection(NewCollectionDto newCollection)
         {
-            var account = await _accountService.GetAccountFromToken();
-            newCollection.AccountId = account.AccountId;
+            var accountId = _httpService.GetAccountId();
+            newCollection.AccountId = accountId;
             var collection = ModelUtil.CreateCollectionModel(newCollection);
             await _collectionRepo.CreateCollection(collection);
             return collection;

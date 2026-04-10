@@ -22,14 +22,12 @@ namespace CollectionManager.API.Services
     public class AccountService : IAccountService
     {
         private readonly IAccountRepository _accountRepository;
-        private readonly IConfiguration _config;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IHttpContextService _httpService;
 
-        public AccountService(IAccountRepository accountRepository, IConfiguration config, IHttpContextAccessor httpContextAccessor)
+        public AccountService(IAccountRepository accountRepository, IHttpContextService httpService)
         {
             _accountRepository = accountRepository;
-            _config = config;
-            _httpContextAccessor = httpContextAccessor;
+            _httpService = httpService;
         }
 
         #region public methods
@@ -56,58 +54,22 @@ namespace CollectionManager.API.Services
             {
                 ArgumentNullException.ThrowIfNull(loginCredentials.Username);
                 var account = await _accountRepository.GetAccountByUserName(loginCredentials.Username); 
-                return (await GenerateToken(account), isValid);
+                return (await _httpService.GenerateToken(account), isValid);
             }
             return (String.Empty, false);
         }
 
         public async Task<string> CheckToken()
         {
-            var claim = _httpContextAccessor.HttpContext?.User.FindFirst("accountId")?.Value;
-
-            if(string.IsNullOrEmpty(claim) || Guid.TryParse(claim, out var accountId)){
-                throw new UnauthorizedAccessException("Account ID not found in token.");
-            }
+            var accountId = _httpService.GetAccountId();
 
             var account = await _accountRepository.GetAccountById(accountId);
-            return await GenerateToken(account);
-        }
-
-        public async Task<string> GenerateToken(Account account)
-        {
-            var secret = _config["JWTVariables:Secret"];
-            ArgumentNullException.ThrowIfNull(secret);
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var claims = new List<Claim>
-            {
-                new Claim("accountId", account.AccountId.ToString()),
-                new Claim("userName", account.UserName ?? string.Empty)
-            };
-
-            var token = new JwtSecurityToken(
-                issuer: _config["JWTVariables:Issuer"],
-                audience: _config["JWTVariables:Audience"],
-                expires: DateTime.Now.AddMinutes(30),
-                signingCredentials: creds,
-                claims: claims
-            );
-
-            await Task.CompletedTask;
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return await _httpService.GenerateToken(account);
         }
 
         public async Task<Account> GetAccountFromToken()
-        {
-            var claim = _httpContextAccessor.HttpContext?.User
-                .FindFirst("accountId")?.Value;
-
-            if (string.IsNullOrEmpty(claim) || !Guid.TryParse(claim, out var accountId))
-                throw new UnauthorizedAccessException("Account ID not found in token.");
-
-            
-
+        {           
+            var accountId = _httpService.GetAccountId();
             return await _accountRepository.GetAccountById(accountId);
         }
 

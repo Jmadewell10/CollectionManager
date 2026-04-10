@@ -19,6 +19,7 @@ builder.Services.AddDbContext<CollectionManagerContext>(options =>
 options.UseSqlServer(connectionString));
 // Add services to the container.
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IHttpContextService, HttpContextService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<ICollectionRepository, CollectionRepository>();
