@@ -6,51 +6,63 @@ import { CollectionService } from './collection.service';
 import { NewCollectionDto } from '../shared/models/dto/new-collection-dto';
 
 @Component({
-  selector: 'app-collections',
-  templateUrl: './collections.component.html',
-  styleUrl: './collections.component.scss'
+    selector: 'app-collections',
+    templateUrl: './collections.component.html',
+    styleUrl: './collections.component.scss'
 })
 export class CollectionsComponent {
 
-  collections: Collection[] = [];
+    collections: Collection[] = [];
 
-  constructor(private dialog: MatDialog, private collectionService: CollectionService) { }
+    constructor(private dialog: MatDialog, private collectionService: CollectionService) { }
 
-  ngOnInit(): void {
-    // wire up your collections service here
-  }
-openAddCollection(): void {
-    const dialogRef = this.dialog.open(AddEditCollectionComponent, {
-        width: '420px',
-        autoFocus: true,
-        panelClass: 'dark-dialog',
-        data: {}
-    });
+    ngOnInit(): void {
+        this.loadCollections();
+    }
 
-    dialogRef.afterClosed().subscribe((result: NewCollectionDto) => {
-        if (result) {
-            this.collectionService.addCollection(result).subscribe();
-        }
+
+    openAddCollection(): void {
+        const dialogRef = this.dialog.open(AddEditCollectionComponent, {
+            width: '420px',
+            autoFocus: true,
+            panelClass: 'dark-dialog',
+            data: {}
+        });
+
+        dialogRef.afterClosed().subscribe((result: NewCollectionDto) => {
+            if (result) {
+                this.collectionService.addCollection(result).subscribe({
+                    next: (newCollection: Collection) => this.collections = [...this.collections, newCollection],
+                    error: (err)=> console.error('Failed to add collection', err)
+                });
+            }
+        });
+    }
+
+    openEditCollection(collection: Collection): void {
+        const dialogRef = this.dialog.open(AddEditCollectionComponent, {
+            width: '420px',
+            autoFocus: true,
+            panelClass: 'dark-dialog',
+            data: { collection }
+        });
+
+        dialogRef.afterClosed().subscribe((result: Partial<Collection>) => {
+            if (result) {
+                // call your collection service here
+            }
+        });
+    }
+
+    openCollection(collection: Collection): void {
+        // navigate into the collection here
+    }
+
+    private loadCollections(): void {
+    this.collectionService.getAllCollectionsForUser().subscribe({
+        next: (result: Collection[]) => this.collections = result,
+        error: (err) => console.error('Failed to load collections', err)
     });
 }
-
-openEditCollection(collection: Collection): void {
-    const dialogRef = this.dialog.open(AddEditCollectionComponent, {
-        width: '420px',
-        autoFocus: true,
-        panelClass: 'dark-dialog',
-        data: { collection }
-    });
-
-    dialogRef.afterClosed().subscribe((result: Partial<Collection>) => {
-        if (result) {
-            // call your collection service here
-        }
-    });
-}
-
-  openCollection(collection: Collection): void {
-    // navigate into the collection here
-  }
 
 }

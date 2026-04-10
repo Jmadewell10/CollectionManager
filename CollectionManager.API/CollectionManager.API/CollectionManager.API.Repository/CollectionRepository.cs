@@ -14,12 +14,12 @@ namespace CollectionManager.API.Repository
            _ctx = ctx; 
         }
 
-        public async Task<List<Collection>> GetCollections(string userId)
+        public async Task<List<Collection>> GetCollections(Guid userId)
         {
             try
             {
                 return await _ctx.Collections
-                        .Where(x => x.AccountId.ToString() == userId)
+                        .Where(x => x.AccountId == userId)
                         .ToListAsync();
             }
             catch(Exception e)
