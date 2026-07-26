@@ -24,6 +24,8 @@ import { CollectionsComponent } from './collections/collections.component';
 import { HomeComponent } from './home/home.component';
 import { TokenInterceptor } from './shared/Interceptors/token.interceptor';
 import { AddEditCollectionComponent } from './collections/add-edit-collection/add-edit-collection.component';
+import { ViewCollectionComponent } from './collections/view-collection/view-collection.component';
+import { SearchComponent } from './shared/components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { AddEditCollectionComponent } from './collections/add-edit-collection/ad
     CollectionsComponent,
     HomeComponent,
     AddEditCollectionComponent,
+    ViewCollectionComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,8 @@ import { AddEditCollectionComponent } from './collections/add-edit-collection/ad
     ReactiveFormsModule,
     MatInputModule,
     MatSnackBarModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
   providers: [provideHttpClient(withInterceptorsFromDi()),
   {

@@ -4,6 +4,7 @@ import { Collection } from '../shared/models/domain-models/collection-model';
 import { AddEditCollectionComponent } from './add-edit-collection/add-edit-collection.component';
 import { CollectionService } from './collection.service';
 import { NewCollectionDto } from '../shared/models/dto/new-collection-dto';
+import { ViewCollectionComponent } from './view-collection/view-collection.component';
 
 @Component({
     selector: 'app-collections',
@@ -55,7 +56,12 @@ export class CollectionsComponent {
     }
 
     openCollection(collection: Collection): void {
-        // navigate into the collection here
+        const dialogRef = this.dialog.open(ViewCollectionComponent, {
+            width: '420px',
+            autoFocus: true,
+            panelClass: 'dark-dialog',
+            data: {}
+        });
     }
 
     private loadCollections(): void {
