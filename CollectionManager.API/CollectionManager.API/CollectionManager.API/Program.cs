@@ -24,6 +24,21 @@ builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<ICollectionRepository, CollectionRepository>();
 builder.Services.AddScoped<ICollectionService, CollectionService>();
+builder.Services.AddScoped<ICardService, CardService>();
+builder.Services.AddHttpClient<IScryfallService, ScryfallService>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ScryfallBaseAddress"] ?? "");
+
+    client.DefaultRequestHeaders.Add(
+       "User-Agent",
+       "CollectionManager/1.0"
+    );
+
+    client.DefaultRequestHeaders.Add(
+        "Accept",
+        "application/json"
+    );
+});
 
 
 builder.Services.AddControllers();
