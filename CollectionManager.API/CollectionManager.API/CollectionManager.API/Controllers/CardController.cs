@@ -15,7 +15,7 @@ namespace CollectionManager.API.Controllers
             _cardService = cardService;
         }
 
-        [HttpGet("autocomplete")]
+        [HttpGet("Autocomplete")]
         public async Task<ActionResult<List<string>>> Autocomplete([FromQuery] string q)
         {
             if (string.IsNullOrWhiteSpace(q))
