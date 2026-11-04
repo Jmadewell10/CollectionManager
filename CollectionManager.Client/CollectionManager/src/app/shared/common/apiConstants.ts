@@ -7,3 +7,5 @@ export const ADD_ACCOUNT_ENDPOINT = '/AddAccount';
 export const CHECK_TOKEN_ENDPOINT = '/CheckToken';
 export const ADD_COLLECTION_ENDPOINT = '/CreateCollection'
 export const GET_ALL_COLLECTIONS_FOR_USER = '/GetAllCollectionsForUser';
+export const CARD_CONTROLLER = '/Card';
+export const AUTOCOMPLETE_ENDPOINT = '/Autocomplete'
